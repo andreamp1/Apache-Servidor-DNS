@@ -56,23 +56,22 @@ asir_bind9:
 * Asignamos una contraseña que será 'password' en string.
 ~~~
 ## Red
-~~~
+
 networks:
   apanet:
     external: true
 
 ~~~
+## Volumenes
 
-### Volumenes
-~~~
-volumes:
-  apache-data:
+    volumes:
+    apache-data:
     external: true
-  conf:
-    external: true
-  options:
-  secondaryzones:
-  logfiles:
+     conf:
+      external: true
+        options:
+      secondaryzones:
+       logfiles:
 ~~~
 
 
