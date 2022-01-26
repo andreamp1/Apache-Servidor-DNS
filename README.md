@@ -53,7 +53,7 @@ asir_bind9:
 * Su puerto será el 6901:6901.
 * Asignamos una contraseña que será 'password' en string.
 ~~~
-## Red
+
 
   networks:
     apanet:
