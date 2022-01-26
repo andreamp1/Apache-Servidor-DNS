@@ -34,7 +34,6 @@ asir_bind9:
 * Asignamos la ip 192.168.22.5
 ~~~
 
-## Cliente
 
  asir_cliente:
     image: kasmweb/desktop:1.10.0-rolling
