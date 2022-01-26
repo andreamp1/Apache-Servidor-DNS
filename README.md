@@ -55,12 +55,11 @@ asir_bind9:
 ~~~
 ## Red
 
-networks:
-  apanet:
-    external: true
+  networks:
+    apanet:
+     external: true
 
 ~~~
-## Volumenes
 
     volumes:
     apache-data:
@@ -71,6 +70,7 @@ networks:
       secondaryzones:
        logfiles:
 ~~~
+
 wireshark:
     image: lscr.io/linuxserver/wireshark
     container_name: wireshark
