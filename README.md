@@ -11,12 +11,12 @@
       - 8081:80
     volumes:
       - apache-data:/usr/local/apache2/htdocs
-
+~~~
 * Puerto:8081:80.
 * Ponemos un volumen, apache data.
 * Asigranción de la ip de la red: 192.168.22.4
 
-## DNS
+
 ~~~
 asir_bind9:
     image: internetsystemsconsortium/bind9:9.16
@@ -34,9 +34,10 @@ asir_bind9:
 * El puerto es el 53:53.
 * Ponemos como volumen bind.
 * Asignamos la ip 192.168.22.5
+~~~
 
 ## Cliente
-~~~
+
  asir_cliente:
     image: kasmweb/desktop:1.10.0-rolling
     networks:
@@ -53,25 +54,24 @@ asir_bind9:
 ~~~
 * Su puerto será el 6901:6901.
 * Asignamos una contraseña que será 'password' en string.
-
-## Red
 ~~~
+## Red
+
 networks:
   apanet:
     external: true
 
 ~~~
+## Volumenes
 
-### Volumenes
-~~~
-volumes:
-  apache-data:
+    volumes:
+    apache-data:
     external: true
-  conf:
-    external: true
-  options:
-  secondaryzones:
-  logfiles:
+     conf:
+      external: true
+        options:
+      secondaryzones:
+       logfiles:
 ~~~
 
 
